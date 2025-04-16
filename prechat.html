@@ -34,25 +34,25 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
  
 		embedded_svc.init(
-			'https://b2c--0061.sandbox.my.salesforce.com',
-			'https://b2c--0061.sandbox.my.salesforce-sites.com/liveAgent',
+			'https://b2c--dev.sandbox.my.salesforce.com',
+			'https://b2c--dev.sandbox.my.salesforce-sites.com/liveAgent',
 			gslbBaseURL,
-			'00D5r0000008j6U',
+			'00DKL000000GydS',
 			'CSR_Chat_Group',
 			{
 				baseLiveAgentContentURL: 'https://c.la1-c1cs-am3.salesforceliveagent.com/content',
-				deploymentId: '5721q0000004CQg',
-				buttonId: '5731q0000004F9p',
+				deploymentId: '5722p000000Tbno',
+				buttonId: '5732p000000TcI1',
 				baseLiveAgentURL: 'https://d.la1-c1cs-am3.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I1q0000008OYXEA2_1758d54861b',
+				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I2p000000PD2lEAG_179d84a5ef3',
 				isOfflineSupportEnabled: false
 			}
 		);
 	};
- 
+
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://b2c--0061.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://b2c--dev.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
