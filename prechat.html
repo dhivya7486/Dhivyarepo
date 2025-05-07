@@ -32,6 +32,9 @@
  
 		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 		embedded_svc.settings.entryFeature = 'LiveAgent';
+		embedded_svc.settings.extraPrechatInfo = [{"entityFieldMaps":
+        [{"doCreate":false,"doFind":true,"fieldName":"Subject","isExactMatch":true,"label":"Subject"}],
+         "entityName":"Case","saveToTranscript":"Case","showOnCreate":true}];
  
 		embedded_svc.init(
 			'https://b2c--dev.sandbox.my.salesforce.com',
